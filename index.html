@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <title>Kwazy Cupcakes</title>
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>Kwazy Cupcakes</a>
+      <a href="/" id="navbar__logo"><img class="logo" src="logo 2.PNG" alt="cupcake logo"></a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> 
         <span class="bar"></span>
@@ -20,22 +21,34 @@
           <a href="home" class="navbar__links">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="bites" class="navbar__links">Our Bites</a>
+          <a href="bakes" class="navbar__links">Our Bites</a>
         </li>
         <li class="navbar__item">
           <a href="about" class="navbar__links">About Us</a>
         </li>
-        <li class="navbar__item"><a href="contact" class="navbar__links">Contact</a></li>
+        <li class="navbar__item">
+        <a href="contact" class="navbar__links">Contact</a>
+      </li>
       </ul>
     </div>
   </nav>
   <script src="main.js"></script>
-<!--
+
 <section id="home" >
     <div class="home">
-      <h2 class="slogan"> “Flavor Explosion: Unwrap the Unexpected in Every Cupcake!”</h2>
+      <div class="cupcake-scroll">
+        <div class="swipe-arrows" onclick="changeCupcakeDisplay(true)"><img src="arrow1.png"></div>
+        <div id="#image-container" class="cupcakes">
+          <img class="image" src="cupcake1.png" alt="cupcake">
+          <img class="image" src="cupcake2.png" alt="cupcake">
+        </div>
+        <div class="swipe-arrows" onclick="changeCupcakeDisplay(false)"><img src="arrow2.png"></div>
+      </div>
+      <h2 class="slogan"></h2>
+     <!--<h2 class="slogan"> “Flavor Explosion: Unwrap the Unexpected in Every Cupcake!”</h2>-->
   </div>
 </section>
+<!--
 <section id="bites">
   <h2>Our Sweet Line up </h2>
 <h4>Indulge in our signature flavors</h4>
