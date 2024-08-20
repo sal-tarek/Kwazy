@@ -1,43 +1,28 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const nav = document.querySelector('.navbar');
+let index=0;
+let cupList=[ `<iframe class="d-cupcake" src='https://my.spline.design/untitledcopy-9fed98a111675808c081397bcf2e95c1/' frameborder='0' width='100%' height='100%'></iframe>`,`<iframe class="d-cupcake" src='https://my.spline.design/untitled-cbd6be1503802087ade556a7a245b934/' frameborder='0' width='100%' height='100%'></iframe>`,`<iframe class="d-cupcake" src='https://my.spline.design/untitledcopycopy-0d2836aa7c36cf567c5b145e05f03e2a/' frameborder='0' width='100%' height='100%'></iframe>`,`<iframe  class="d-cupcake" src='https://my.spline.design/untitledcopycopycopy-729b008ab26d51c4cb9dccce2b29c66d/' frameborder='0' width='100%' height='100%'></iframe>`,`<iframe class="d-cupcake" src='https://my.spline.design/untitledcopycopycopycopy-2ef30cacaaae1d7c3ecf6acd93a6f68f/' frameborder='0' width='100%' height='100%'></iframe>`]
 menu.addEventListener('click', function(){
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
   nav.classList.toggle('is-active');
 })
-
-let cupcakeCount = 0; // Starting with the first image
-const images = document.querySelectorAll('#image-container .image');
-const totalImages = images.length;
-
-function changeCupcakeDisplay(direction) {
-  // Get the current and next image based on the direction
-  const currentImage = images[cupcakeCount];
-  cupcakeCount = (direction ? cupcakeCount + 1 : cupcakeCount - 1 + totalImages) % totalImages;
-  const nextImage = images[1];
-
-  // Ensure the next image is visible and positioned correctly
-  nextImage.style.transition = 'none'; // Remove transition for immediate positioning
-  nextImage.style.display = 'block'; // Show the next image
-  nextImage.style.left = direction ? '100%' : '-100%'; // Start it off-screen
-
-  // Trigger reflow to apply the initial position
-  nextImage.offsetWidth;
-
-  // Slide out the current image and slide in the next image
-  currentImage.style.left = direction ? '-100%' : '100%'; // Slide current image out
-  nextImage.style.transition = 'left 0.5s ease-in-out';
-  nextImage.style.left = '0'; // Slide the next image in
-
-  // When the transition ends, hide the old image
-  currentImage.addEventListener('transitionend', () => {
-    currentImage.style.display = 'none'; // Hide the old image
-  }, { once: true });
-
-  // Add active class to the new image
-  nextImage.classList.add('active');
+function change(direction){
+  element=document.querySelector(".cupcakes");
+  if(direction){
+    index++;
+    if(index==cupList.length)index=0;
+  } 
+  else {
+    index--;
+    if(index==-1)index=cupList.length-1;
+  }
+  element.innerHTML=cupList[index];
 }
+
+
+
   
 
 
