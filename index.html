@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>Kwazy Cupcake</a>
+      <a href="/" id="navbar__logo"><i class="fas fa-gem">Kwazy Cupcake</i></a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> 
         <span class="bar"></span>
@@ -18,64 +18,103 @@
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <a href="home" class="navbar__links">Home</a>
+          <a href="#home" class="navbar__links">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="bakes" class="navbar__links">Our Bites</a>
+          <a href="#bites" class="navbar__links">Our Bites</a>
         </li>
         <li class="navbar__item">
-          <a href="about" class="navbar__links">About Us</a>
+          <a href="#about" class="navbar__links">About Us</a>
         </li>
         <li class="navbar__item">
-        <a href="contact" class="navbar__links">Contact</a>
+        <a href="#contact" class="navbar__links">Contact</a>
       </li>
       </ul>
     </div>
   </nav>
-  <script src="main.js"></script>
-
 <section id="home" >
     <div class="home">
+      <div class="slogan"><iframe class="d-slogan" src='https://my.spline.design/untitled-76653204bdd1acdb1eeb3a46519cd942/' frameborder='0' width='100%' height='100%'></iframe></div>
       <div class="cupcake-scroll">
-        <div onclick="change(true)"><</div>
+        <div class="swipe-arrows" onclick="change(true)"><</div>
         <div id="#image-container" class="cupcakes">
           <iframe class="d-cupcake" src='https://my.spline.design/untitledcopy-9fed98a111675808c081397bcf2e95c1/' frameborder='0' width='100%' height='100%'></iframe>
         </div>
-        <div onclick="change(false)">></div>
+        <div  class="swipe-arrows" onclick="change(false)">></div>
       </div>
-     <!--<h2 class="slogan"> “Flavor Explosion: Unwrap the Unexpected in Every Cupcake!”</h2>-->
   </div>
 </section>
-<!--
+
 <section id="bites">
-  <h2>Our Sweet Line up </h2>
-<h4>Indulge in our signature flavors</h4>
-<div>
-  <h4>Tangy Lemon Zest</h4>
-<p>Awaken your senses with our Tangy Lemon Zest cupcake, a vibrant addition to your dessert collection. This delightful treat features a light and airy cupcake base infused with zesty lemon flavor, bringing a refreshing twist to your palate. Topped with luscious lemon buttercream, each bite is a perfect balance of sweetness and tanginess, making it an ideal choice for those who love citrusy desserts. Perfect for summer gatherings or simply to brighten your day, this cupcake is a must-try for anyone seeking a burst of flavor that invigorates and delights.
-</p>
+  <div class="bites">
+  <div class="bites-header">
+    <iframe src='https://my.spline.design/untitled-e2c43cf88739ddd056df38a114e7afdf/' frameborder='0' width='50%' height='100%'></iframe>
+  <!--<h4>Indulge in our signature flavors</h4>-->
 </div>
-<div>
-  <h4>Rich Chocolate Delight</h4>
-<p>Savor the irresistible allure of our Rich Chocolate Delight cupcake. Crafted with the finest cocoa, this cupcake promises a moist and fluffy texture that melts in your mouth. Each bite reveals a burst of intense chocolate flavor, perfectly balanced with a velvety chocolate frosting. Ideal for chocolate lovers, this cupcake is a celebration of richness and sweetness. Whether it's a special occasion or just a treat for yourself, indulge in this divine creation that speaks to your sweet tooth. Elevate your dessert experience with a cupcake that truly defines chocolate bliss.
-</p>
-</div>
-<div>
-  <h4>Spiced Cinnamon Dream </h4>
-<p>Embrace the warmth of our Spiced Cinnamon Dream cupcake, a cozy treat that captures the essence of comfort. Infused with aromatic cinnamon and nutmeg, this cupcake delivers a delightful spice blend that evokes nostalgic feelings of home-baked goodness. The moist, fluffy texture pairs beautifully with the creamy cinnamon frosting, creating a harmonious balance of flavors that tantalizes your taste buds. Perfect for chilly days or festive celebrations, indulge in this sweet escape that transports you to a world of cozy warmth and delightful memories with every bite.
-</p>
-</div>
-<div>
-  <h4> Lotus Infusion  </h4>
-<p>Entice your taste buds with our Lotus Infusion creation, a captivating blend of subtle sweetness and rich flavor. This indulgent treat features a soft, melt-in-your-mouth base infused with the unique essence of Lotus Biscoff, offering a warm, caramelized taste that lingers pleasantly. Crowned with a smooth Lotus Biscoff cream, each bite delivers a perfect harmony of velvety texture and deep, spiced sweetness, making it an irresistible choice for those who appreciate a sophisticated dessert experience.
-</p>
-</div>
-<div>
-  <h4>Pistachio Bomb </h4>
-<p>Elevate your dessert experience with our Pistachio Bomb, a decadent treat designed to delight nut lovers. This luscious creation boasts a moist, pistachio-infused base that bursts with nutty richness in every bite. Topped with velvety pistachio cream and a sprinkle of finely chopped pistachios, it offers a luxurious balance of flavor and crunch, making it the perfect choice for anyone craving a bold and refined dessert.
-</p>
-</div>
+<div class="coverr"></div>
+  <div class="cup-display">
+    <div class="cup">
+      <div class="temp-container">
+      <img src="lemon.jpg">
+      <div class="cover"></div>
+      </div>
+      <h4>Tangy Lemon Zest</h4>
+    </div>
+    <div class="cup">
+      <div class="temp-container">
+      <img src="chocolate.jpg">
+      <div class="cover"></div>
+      </div>
+    <h4>Rich Chocolate Delight</h4>
+  </div>
+  <div class="cup">
+    <div class="temp-container">
+    <img src="cinammon.jpg">
+    <div class="cover"></div>
+    </div>
+  <h4>Spiced Cinnamon Dream</h4>
+  </div>
+  <div class="cup">
+    <div class="temp-container">
+    <img src="lotus.jpg">
+    <div class="cover"></div>
+    </div>
+  <h4>Lotus Infusion</h4>
+  </div>
+  <div class="cup">
+    <div class="temp-container">
+    <img src="pistachio.jpg">
+    <div class="cover"></div>
+    </div>
+  <h4>Pistachio Bomb</h4>
+   </div>
+  </div>
+   
+    <!--<p>Awaken your senses with our Tangy Lemon Zest cupcake, a vibrant addition to your dessert collection. This delightful treat features a light and airy cupcake base infused with zesty lemon flavor, bringing a refreshing twist to your palate. Topped with luscious lemon buttercream, each bite is a perfect balance of sweetness and tanginess, making it an ideal choice for those who love citrusy desserts. Perfect for summer gatherings or simply to brighten your day, this cupcake is a must-try for anyone seeking a burst of flavor that invigorates and delights.  </p>-->
+
+   
+     
+     <!--<p>Savor the irresistible allure of our Rich Chocolate Delight cupcake. Crafted with the finest cocoa, this cupcake promises a moist and fluffy texture that melts in your mouth. Each bite reveals a burst of intense chocolate flavor, perfectly balanced with a velvety chocolate frosting. Ideal for chocolate lovers, this cupcake is a celebration of richness and sweetness. Whether it's a special occasion or just a treat for yourself, indulge in this divine creation that speaks to your sweet tooth. Elevate your dessert experience with a cupcake that truly defines chocolate bliss.
+    </p>-->
+    
+     
+     <!--<p>Embrace the warmth of our Spiced Cinnamon Dream cupcake, a cozy treat that captures the essence of comfort. Infused with aromatic cinnamon and nutmeg, this cupcake delivers a delightful spice blend that evokes nostalgic feelings of home-baked goodness. The moist, fluffy texture pairs beautifully with the creamy cinnamon frosting, creating a harmonious balance of flavors that tantalizes your taste buds. Perfect for chilly days or festive celebrations, indulge in this sweet escape that transports you to a world of cozy warmth and delightful memories with every bite.
+    </p>-->
+   
+      
+     <!--<p>Entice your taste buds with our Lotus Infusion creation, a captivating blend of subtle sweetness and rich flavor. This indulgent treat features a soft, melt-in-your-mouth base infused with the unique essence of Lotus Biscoff, offering a warm, caramelized taste that lingers pleasantly. Crowned with a smooth Lotus Biscoff cream, each bite delivers a perfect harmony of velvety texture and deep, spiced sweetness, making it an irresistible choice for those who appreciate a sophisticated dessert experience.
+    </p>-->
+
+     <!--<p>Elevate your dessert experience with our Pistachio Bomb, a decadent treat designed to delight nut lovers. This luscious creation boasts a moist, pistachio-infused base that bursts with nutty richness in every bite. Topped with velvety pistachio cream and a sprinkle of finely chopped pistachios, it offers a luxurious balance of flavor and crunch, making it the perfect choice for anyone craving a bold and refined dessert.
+    </p>-->
+    </div>
+  </div>
 </section>
+  <!--
+
+
+
+
 <section id="about" >
   <h2>Baked with love </h2>
 <h4>Discover our story</h4>
@@ -86,5 +125,6 @@
   
 </section>
 -->
+<script src="main.js"></script>
 </body>
 </html>
