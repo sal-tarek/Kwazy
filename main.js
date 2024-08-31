@@ -37,6 +37,19 @@ function change(direction){
     if(index==-1)index=cupList.length-1;
   }
   element.innerHTML=cupList[index];
+  /*function loadContent() {
+      // Show the spinner
+      document.getElementById('spinner').style.display = 'block';
+
+      // Simulate a network request or some loading process
+      setTimeout(() => {
+        // Hide the spinner
+        document.getElementById('spinner').style.display = 'none';
+
+        // Show the content
+        document.getElementById('content').style.display = 'block';
+      }, 2000); // Simulated loading time (2 seconds)
+    }*/
 }
 
 
