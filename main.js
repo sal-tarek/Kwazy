@@ -106,6 +106,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function applyResponsiveBehavior() {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    // Execute JavaScript for screens smaller than 600px
+    console.log("Screen width is less than or equal to 600px");
+    // Your code here...
+  } else if (window.matchMedia("(min-width: 601px) and (max-width: 1024px)").matches) {
+    // Execute JavaScript for screens between 601px and 1024px
+    console.log("Screen width is between 601px and 1024px");
+    // Your code here...
+  } else {
+    // Execute JavaScript for screens larger than 1024px
+    console.log("Screen width is greater than 1024px");
+    // Your code here...
+  }
+}
+
+// Call the function initially to apply the behavior based on the current viewport size
+applyResponsiveBehavior();
+
+// Optional: Add an event listener to handle changes in the viewport size
+window.addEventListener("resize", applyResponsiveBehavior);
+
   
 
 

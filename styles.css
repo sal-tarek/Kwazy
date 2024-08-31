@@ -28,6 +28,7 @@ body{
   position: absolute;
   bottom: 0;
 }
+
 .navbar {
   /* From https://css.glass */
   /* From https://css.glass */
@@ -110,7 +111,8 @@ section{
   height:100vh;
 }
 #home{
-  background-color: #f1bac8;
+  background-color: #FFC0CB;
+  height:85vh;
 }
 .home{
   display:flex;
@@ -187,7 +189,6 @@ section{
   display:flex;
   flex-direction: column;
   position: relative;
-  height:100%;
   width:100%;
   /*background-image:url('cafe.jpg');
   background-size:cover;
@@ -216,7 +217,7 @@ section{
   margin-top: 20px;
 }
 .bites-header h2{
-  margin-top: 70px;
+  margin-top: 98px;
 }
 .bites-header h4{
   margin-top: 10px;
@@ -299,18 +300,36 @@ section{
   margin-bottom:30px;
 }
 #about{
+  display: flex;
   height:100vh;
+  flex-direction: column;
+}
+#about .scallop-up{
+  height: 5%;
+  width: 100%;
+  background: radial-gradient(circle at 50% 100%, #9bba9b 10px,  #9bba9b 49%, transparent 51%,transparent 100%);
+  background-size: 49px 100%; /* Adjust this for the size of each scallop */
+  background-repeat: repeat-x; /* Repeat the pattern horizontally */
+}
+#about .scallop-down {
+  height: 5%;
+  width: 100%;
+  background: radial-gradient(circle at 50% 0%,  #9bba9b 10px,  #9bba9b 49%, transparent 51%, transparent 100%);
+  background-size: 49px 100%;  /* Adjust this for the size of each scallop */
+  background-repeat: repeat-x; /* Repeat the pattern horizontally */
 }
 .about{
   display:flex;
   flex-direction: column;
+  background-color:  #9bba9b;
   width:100%;
-  height:100%;
+  height:90%;
   padding:20px;
 }
 .about h2{
   margin-top: 40px;
   margin-bottom: 10px;
+  word-spacing: 3px;
 }
 .about-section{
   display: flex;
@@ -334,7 +353,6 @@ section{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #9bba9b;
   border-radius:1rem;
   margin:10px;
 }
@@ -554,11 +572,30 @@ section{
   -webkit-backdrop-filter: blur(3.9px);
   z-index: -1;
 }
+#about{
+  display: flex;
+  height:100vh;
+  flex-direction: column;
+}
+#about .scallop-up{
+  height: 5%;
+  width: 100%;
+  background: radial-gradient(circle at 50% 100%, #9bba9b 10px,  #9bba9b 49%, transparent 51%,transparent 100%);
+  background-size: 49px 100%; /* Adjust this for the size of each scallop */
+  background-repeat: repeat-x; /* Repeat the pattern horizontally */
+}
+#about .scallop-down {
+  height: 5%;
+  width: 100%;
+  background: radial-gradient(circle at 50% 0%,  #9bba9b 10px,  #9bba9b 49%, transparent 51%, transparent 100%);
+  background-size: 49px 100%;  /* Adjust this for the size of each scallop */
+  background-repeat: repeat-x; /* Repeat the pattern horizontally */
+}
 .about{
   display: flex;
   flex-direction: column;
   width:100%;
-  height:100%;
+  height:91%;
   align-items: center;
   justify-content: center;
 }
