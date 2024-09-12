@@ -405,6 +405,64 @@ section{
   transform: scale(1);
   opacity: 1;
 }
+#contact{
+  background-image: url('Kwazy.png');
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.contact{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  min-height:300px;
+  height:70%;
+  padding:10px;
+}
+.contact-header{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:10px;
+  margin:10px 0 0 0;
+  width:100%;
+}
+.contact-header h2{
+   margin-left:-5%;
+}
+.contact-header h4{
+  margin-left:5%;
+}
+.contact-form{
+  display:flex;
+  align-items: flex-end;
+  justify-content:center;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  padding:0;
+  min-width: 300px;
+  max-height:500px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  justify-content: center;
+  height:70%;
+  gap:10px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  gap:5px;
+}
+input,textarea,button{
+  max-width:300px;
+}
 
 @media screen and (max-width: 1150px) {
   body{
